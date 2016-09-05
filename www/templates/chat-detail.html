@@ -1,0 +1,74 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name.first}} {{chat.name.last}}">
+  <ion-content class="padding">
+  <!-- <ion-item ui-sref='tab.chats'> -->
+    <!-- <img ng-src="{{chat.face}}" style="width: 64px; height: 64px"> -->
+   <div class = "list">
+    <div class ="item item-avatar">
+    <img src = "{{chat.picture.thumnail}}" />
+      <h2>{{chat.name.first}} {{chat.name.last}}</h2>
+      <p>{{chat.location.city}} {{chat.password}}</p>
+      </div>
+      <div class="item item-icon-left">
+        <i class ="icon ion-email royal"></i>
+        {{chat.email}}
+      </div>
+      <div class ="item item-icon-left">
+        <i class ="icon ion-ios-telephone energized"></i>
+        {{chat.phone}}
+        </div>
+        <div class="item item-icon-left">
+          <i class="icon ion-ios-home calm"></i>
+          <p>
+            {{chat.location.street}}
+            {{chat.location.city}}
+          </p>
+          <p>
+          {{chat.location.state}}
+            {{chat.location.postcode}}
+          </p>
+        </div>
+
+
+     <!--  {{chat.lastText}}
+
+      <div class="list card">
+
+       <a class="item item-avatar" href="#">
+      <img src="img/ben.png">
+      <h2>Pacharapong Thongarsa</h2>
+      <p>yen.yamato@gmail.com</p>
+    </a>
+
+</div>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-home"></i>
+    Enter home address
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios-telephone"></i>
+    Enter phone number
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-wifi"></i>
+    Enter wireless password
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-card"></i>
+    Enter card information
+  </a> -->
+
+<!-- </div> -->
+    </div>
+    <!-- </ion-item> -->
+  </ion-content>
+</ion-view>
